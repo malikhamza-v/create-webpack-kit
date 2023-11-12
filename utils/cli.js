@@ -2,27 +2,30 @@ const meow = require('meow');
 const meowHelp = require('cli-meow-help');
 
 const flags = {
-	clear: {
-		type: `boolean`,
-		default: true,
-		alias: `c`,
-		desc: `Clear the console`
+	project_name: {
+		type: `string`,
+		default:
+			(process.argv.slice(2)[0] === 'help'
+				? 'undefined'
+				: process.argv.slice(2)[0]) || 'undefined',
+		alias: 'p',
+		desc: `Specify project name`
 	},
-	noClear: {
-		type: `boolean`,
-		default: false,
-		desc: `Don't clear the console`
+	template: {
+		type: `string`,
+		default: 'undefined',
+		alias: `t`,
+		desc: `Choose template [javascript | typescript]`
 	},
-	debug: {
-		type: `boolean`,
-		default: false,
-		alias: `d`,
-		desc: `Print debug info`
+	ui_library: {
+		type: `string`,
+		default: 'undefined',
+		desc: `Choose UI Library [tailwind | bootstrap | none]`
 	},
-	version: {
-		type: `boolean`,
-		alias: `v`,
-		desc: `Print CLI version`
+	sass: {
+		type: `string`,
+		default: 'undefined',
+		desc: `Whould you like to use Sass [true | false]`
 	}
 };
 
