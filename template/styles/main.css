@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  font-size: 5rem;
+}

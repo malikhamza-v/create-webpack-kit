@@ -25,7 +25,7 @@ const flags = {
 	sass: {
 		type: `string`,
 		default: 'undefined',
-		desc: `Whould you like to use Sass [true | false]`
+		desc: `Whould you like to use Sass [no | yes]`
 	}
 };
 

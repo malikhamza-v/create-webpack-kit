@@ -2,6 +2,7 @@ const welcome = require('cli-welcome');
 const pkg = require('./../package.json');
 const unhandled = require('cli-handle-unhandled');
 const inquirer = require('inquirer');
+const generate = require('./generate.js');
 
 async function promptForMissingOptions(options) {
 	return await inquirer
@@ -36,13 +37,6 @@ async function promptForMissingOptions(options) {
 			}
 		])
 		.then(answers => {
-			if (answers.sass) {
-				if (answers.sass === 'yes') {
-					answers.sass = true;
-				} else {
-					answers.sass = false;
-				}
-			}
 			return {
 				...options,
 				...answers
@@ -60,7 +54,8 @@ module.exports = async flags => {
 		bgColor: '#36BB09',
 		color: '#000000',
 		bold: true,
-		clear: flags.clear
+		clear: true
 	});
-	await promptForMissingOptions(flags);
+	const options = await promptForMissingOptions(flags);
+	generate(options);
 };
