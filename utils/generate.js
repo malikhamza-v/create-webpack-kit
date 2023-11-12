@@ -19,7 +19,6 @@ function createPackageJson(options) {
 		},
 		keywords: [],
 		author: '',
-		// TODO: The dependencies needs to be correct
 		license: 'ISC',
 		dependencies: {},
 		devDependencies: {
