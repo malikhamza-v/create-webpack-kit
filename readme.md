@@ -19,7 +19,7 @@ npx create-webpack-kit project_name
 Here're some of the project's best features:
 
 -   <strong>Template:</strong> Choose between JavaScript and TypeScript.
-    -   Pass the `-t` or `--template` flag to set the template directly in the command.
+    -   Pass the `-t` or `--template` flag with options `javascript` or `typescript` to set the template directly in the command.
 -   <strong>Sass:</strong> Decide whether you want to use Sass in your project.
     -   Pass `--sass` with options `yes` or `no` to set Sass directly.
 -   <strong>UI Library:</strong> Select the UI library you prefer - Tailwind, Bootstrap, or none.
@@ -37,3 +37,10 @@ npx create-webpack-kit my_awesome_project -t typescript --sass yes --ui_library 
 ```
 npx create-webpack-kit help
 ```
+
+<h2>💖Like my work?</h2>
+<p>If Create-Webpack-Kit has proven to be a valuable asset to your workflow, consider following me for more exciting tools and projects. Your support motivates and fuels the creation of even more developer-friendly utilities.
+
+🚀 Follow me on GitHub: <a href='https://github.com/malikhamza-v'>Malik Hamza</a>
+
+Happy coding, and may your projects be as seamless as your webpack setup! 🌟</p>
