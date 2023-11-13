@@ -1,11 +1,12 @@
 {
 	"name": "create-webpack-kit",
 	"description": "Webpack Kit with Sass, tailwind, Bootstrap and much more!",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"license": "MIT",
 	"bin": {
 		"create-webpack-kit": "index.js"
 	},
+	"repository": "https://github.com/malikhamza-v/create-webpack-kit",
 	"author": {
 		"name": "Malik Hamza",
 		"email": "malikhamza.v@gmail.com",
