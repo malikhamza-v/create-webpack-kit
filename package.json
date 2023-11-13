@@ -13,7 +13,11 @@
 	},
 	"keywords": [
 		"create-webpack-kit",
-		"Malik Hamza"
+		"webpack",
+		"typescript",
+		"sass",
+		"tailwind",
+		"bootstrap"
 	],
 	"files": [
 		"index.js",
